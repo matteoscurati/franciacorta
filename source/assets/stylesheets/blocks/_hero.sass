@@ -3,12 +3,19 @@
   background-position: center center
   background-color: $black
   background-size: cover
+  background-image: image-url('franciacorta.jpg')
   position: relative
-  +padding-top(18)
+  +padding-top(16)
   color: $white
 
   +at-breakpoint(desk)
-    +padding-top(16)
+    +padding-top(15)
+    background-attachment: fixed
+
+.hero--bottiglia
+  @extend .hero
+  background-image: image-url('bottiglia.jpg')
+  +padding-top(0)
 
 .hero__body
   display: table
@@ -18,18 +25,16 @@
 .hero__body__inner
   display: table-cell
   vertical-align: middle
-  +vertical-padding(3)
+  +vertical-padding(16)
 
 .hero__heading
-  +franciacorta-font-family
+  +heading-font-family
   +font-size(alpha)
   line-height: 1.2
   margin-left: auto
   margin-right: auto
   max-width: 800px
-
-  h1
-    +franciacorta-font-family
+  color: $red
 
   img
     width: 100%

@@ -1,5 +1,6 @@
 import $ from 'jQuery';
 import classie from 'desandro-classie';
+import './vendor/player.js';
 
 require('jquery-ui');
 require('modernizr');
