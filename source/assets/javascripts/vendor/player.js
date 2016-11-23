@@ -7,6 +7,15 @@ plyr.setup('.js-media-player--0', {
   }
 });
 
+plyr.setup('.js-media-player', {
+  debug: true,
+  controls: 'play-large',
+  //iconUrl:      '../dist/plyr.svg',
+  captions: {
+    defaultActive: true
+  }
+});
+
 //const audioControls = ["<div class='plyr__controls is-small'>",
     //"<button type='button' data-plyr='play'>",
         //"<svg><use xlink:href='#plyr-play'></use></svg>",

@@ -5,6 +5,21 @@
         h1
           | Franciacorta
           br
-          | una storia di passione
-      .text__text
-        p = lorem.paragraphs 2
+          | tra tradizione e modernità
+  .wrap.space--top-6
+    .grid--wide
+      - 14.times do
+        .grid__item.width-6-12.lap-4-12.desk-3-12
+          .audio
+            .audio__body
+              .audio__audio
+                .js-media-player.plyr.plyr--audio.plyr--stopped
+                  audio
+                    source src="" type="audio/mp3"
+                    a href="" Download
+              .audio__body__inner
+                .audio__heading
+                  h2 = lorem.words 3
+                .audio__divider
+                .audio__text
+                  p = lorem.sentence

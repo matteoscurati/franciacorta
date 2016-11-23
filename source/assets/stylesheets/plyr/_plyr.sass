@@ -5,7 +5,7 @@
 .plyr
   position: relative
   max-width: 100%
-  min-width: 200px
+  //min-width: 200px
   font-family: Avenir, "Avenir Next", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif
   direction: ltr
   box-sizing: border-box
@@ -82,7 +82,7 @@
       border: 0
       border-radius: 4px
       user-select: none
-      background: #3498db
+      background: $red
     &::-ms-thumb
       position: relative
       height: 16px
@@ -104,7 +104,7 @@
       outline-offset: 3px
     &:active
       &::-webkit-slider-thumb, &::-moz-range-thumb, &::-ms-thumb
-        background: #3498db
+        background: $red
         border-color: #fff
         transform: scale(1.25)
 
@@ -196,6 +196,7 @@
   line-height: 1
   text-align: center
   transition: opacity .3s ease
+  margin: auto
   > button, .plyr__progress, .plyr__time
     margin-left: 5px
   > button:first-child, .plyr__progress:first-child, .plyr__time:first-child
@@ -218,8 +219,8 @@
     transition: background .3s ease, color .3s ease, opacity .3s ease
     color: inherit
     svg
-      width: 18px
-      height: 18px
+      width: 30px
+      height: 30px
       display: block
       fill: currentColor
     &:focus
@@ -247,19 +248,21 @@
   color: #fff
   button
     &.tab-focus:focus, &:hover
-      background: #3498db
+      background: $red
       color: #fff
 
 .plyr--audio .plyr__controls
-  padding: 10px
+  //padding: 10px
   border-radius: inherit
+  width: 54px
   background: #fff
-  border: 1px solid #dbe3e8
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+  display: block
+  //border: 1px solid #dbe3e8
+  //box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
   color: #565D64
   button
     &.tab-focus:focus, &:hover
-      background: #3498db
+      background: $red
       color: #fff
 
 .plyr__play-large
@@ -269,7 +272,7 @@
   left: 50%
   transform: translate(-50%, -50%)
   padding: 10px
-  background: #3498db
+  background: $red
   border: 4px solid currentColor
   border-radius: 100%
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15)
@@ -421,7 +424,7 @@
 
 .plyr__progress--played, .plyr__volume--display
   z-index: 1
-  color: #3498db
+  color: $red
   background: transparent
   transition: none
 
