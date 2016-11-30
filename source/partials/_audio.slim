@@ -8,18 +8,19 @@
           | tra tradizione e modernità
   .wrap.space--top-6
     .grid--wide
-      - 14.times do
+      - data.audio.audio.each do |a|
         .grid__item.width-6-12.lap-4-12.desk-3-12
           .audio
             .audio__body
               .audio__audio
                 .js-media-player.plyr.plyr--audio.plyr--stopped
                   audio
-                    source src="" type="audio/mp3"
-                    a href="" Download
+                    source src=a.file type="audio/mp3"
+                    a href=a.file Download
               .audio__body__inner
                 .audio__heading
-                  h2 = lorem.words 3
+                  h2 = entity(a.title)
+                  h3 = entity(a.auth)
                 .audio__divider
                 .audio__text
-                  p = lorem.sentence
+                  p = entity(a.desc)
