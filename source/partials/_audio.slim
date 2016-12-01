@@ -1,11 +1,7 @@
 .text
   .wrap
     .text__body
-      .text__heading
-        h1
-          | Franciacorta
-          br
-          | tra tradizione e modernità
+      .text__heading = entity(data.home.audio_title)
   .wrap.space--top-6
     .grid--wide
       - data.audio.audio.each do |a|
